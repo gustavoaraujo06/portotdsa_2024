@@ -125,6 +125,127 @@ main{
     font-family: "JetBrains Mono";
     font-size: 20px;
 }
+#messages-container{
+    height: calc(100vh - 250px);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    overflow: scroll;
+}
+#message-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 3px solid #50B0E0;
+    border-radius: 10px;
+    margin-bottom: 2px;
+}
+#message-input input{
+    font-family: "JetBrains Mono";
+    font-size: 16px;
+    border:none;
+    width: 93%;
+}
+#message-input input:focus{
+    outline: none;
+}
+#message-input button{
+    width: 7%;
+    padding: 5px;
+    background-color: #50B0E0;
+    border: none;
+    border-radius: 10px;
+    font-family: "JetBrains Mono";
+    color: white;
+}
+.message{
+    display: inline-flex;
+    align-items: center;
+    background-color: #50B0E0;
+    margin: 20px;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 20px;
+    color: white;
+    font-family: "JetBrains Mono";
+}
+.message p{
+    max-width: 370px;
+    word-wrap: break-word;
+}
+.message-mecatus{
+    align-self: flex-start;
+}
+.message-user{
+    align-self: flex-end;
+
+}
+.message img{
+    border-radius: 100%;
+    width: 50px; /* Or whatever size you want */
+    height: 50px; /* Should be the same as the width */
+    object-fit: cover;
+    align-self: flex-start;
+}
+#profile-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    font-family: "JetBrains Mono";
+    grid-gap: 20px;
+    padding: 20px;
+}
+#profile-container h2{
+    color: #50B0E0;
+}
+#historico-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.historico{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "JetBrains Mono";
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-sizing: border-box;
+}
+.historico-field{
+    min-width: 150px;
+}
+.historico-field h2{
+    font-size: 20px;
+}
+.historico-field p{
+    font-size: 14px;
+}
+.status{
+    padding: 10px;
+    border-radius: 10px;
+}
+.status-ok{
+    background-color: green;
+    color: white;
+}
+.status-waiting{
+    background-color: yellow;
+    color: black;
+}
+.status-bad{
+    background-color: red;
+    color: white;
+}
 @media (max-width: 576px){
     .nav li a{
         font-size: 12px;
@@ -138,5 +259,11 @@ main{
     }
     #header img{
         width: 20px
+    }
+    .historico{
+        font-size: 12px;
+        display: inline-flex;
+        flex-direction: column;
+        width: auto;
     }
 }
