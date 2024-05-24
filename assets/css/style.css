@@ -1,12 +1,23 @@
 *{
     margin: 0;
 }
+html, body{
+    height: 100%;
+}
+main{
+    min-height: calc(100% - 200px);
+}
 #header{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #50B0E0;
     height: 100px;
+}
+#header img{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
 }
 .nav{
     display: flex;
@@ -24,7 +35,22 @@
 .nav li a{
     text-decoration: none;
     color: white;
-    font-family: "JetBrains Mono"
+    font-family: "JetBrains Mono";
+    position: relative;
+}
+.nav li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: white; 
+    transition: width .3s;
+}
+
+.nav li a:hover::after {
+    width: 100%;
 }
 .login-signup{
     display: flex;
@@ -43,12 +69,10 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-}
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    min-height: calc(100vh - 200px);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-sizing: border-box;
 }
 
 .form{
@@ -90,7 +114,17 @@
     padding: 10px;
     width: 225px;
 }
-
+#footer{
+    height: 100px;
+    background-color: #50B0E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    font-family: "JetBrains Mono";
+    font-size: 20px;
+}
 @media (max-width: 576px){
     .nav li a{
         font-size: 12px;
@@ -101,5 +135,8 @@
     }
     .login-signup{
         gap: 5px;
+    }
+    #header img{
+        width: 20px
     }
 }
