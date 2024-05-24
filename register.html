@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mecatus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div id="header">
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li>
+                        <div class="login-signup">
+                            <a id="registrar" href="register.html">Registrar</a>
+                            <a id="entrar" href="login.html">Entrar</a>
+                        </div>
+                    </li>
+                </ul>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="container-column">
+                <form class="form">
+                    <img src="./assets/img/porto_seguro.png" alt="Porto Seguro" width="100">
+                    <div class="input-container">
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="cpf">CPF</label>
+                        <input type="text" name="cpf" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="rg">RG</label>
+                        <input type="text" name="rg" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="password">Senha</label>
+                        <input type="password" name="password" required>
+                    </div>
+                    <div class="input-container">
+                        <label for="password2">Confirmar Senha</label>
+                        <input type="password" name="password2" required>
+                    </div>
+                    <div class="input-container">
+                        <button type="submit">Registrar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

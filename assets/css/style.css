@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+}
+#header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #50B0E0;
+    height: 100px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.nav li{
+    list-style: none;
+    display: inline;
+    padding: 10px;
+}
+.nav li a{
+    text-decoration: none;
+    color: white;
+    font-family: "JetBrains Mono"
+}
+.login-signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+#entrar{
+    background-color: white;
+    color: #50B0E0;
+    border-radius: 10px;
+    padding: 10px;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "JetBrains Mono";
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+    width: 300px;
+}
+.input-container{
+    margin-top: 10px;
+}
+.form input{
+    margin-top: 10px;
+    font-family: "JetBrains Mono";
+    font-size: 16px;
+    border: 3px solid #50B0E0;
+    border-radius: 10px;
+    padding: 10px;
+}
+.form label{
+    position: absolute;
+    margin-left: 15px;
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: white;
+    color: #50B0E0;
+    font-size: 16px;
+}
+.form button{
+    font-family: "JetBrains Mono";
+    border: none;
+    background-color: #50B0E0;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    width: 225px;
+}
+
+@media (max-width: 576px){
+    .nav li a{
+        font-size: 12px;
+    }
+    .nav{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .login-signup{
+        gap: 5px;
+    }
+}
